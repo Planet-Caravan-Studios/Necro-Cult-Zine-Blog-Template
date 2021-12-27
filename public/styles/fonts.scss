@@ -1,0 +1,100 @@
+/******************************
+
+IMPORTS
+
+******************************/
+@import "vars.scss";
+@import "mixins.scss";
+
+
+
+/******************************
+
+FONTS
+
+******************************/
+
+	/***** ================= *****/
+	/***** SYSTEM FONT STACK  *****/
+	/***** ================= *****/
+
+		@font-face {
+			font-family: system;
+			font-style: normal;
+			font-weight: 300;
+			src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+		}
+
+		body {
+			font-family: "system";
+			letter-spacing: 0.035em;
+		}
+	
+	/***** Computerfont *****/
+	/* https://www.dafont.com/computerfont.font */
+	@font-face {
+		font-family: "Computerfont";
+		src: url("/fonts/Computerfont.ttf") format("ttf");
+		font-weight: 100;
+		font-display: fallback;
+	}
+	.computerfont{
+		font-family: "Computerfont";
+		line-height:1;
+	}
+
+	/***** Old English *****/
+	/*NOTE: AncientMedium is naturally smaller than other fonts
+	Use larger font sizes to compensate*/
+		@font-face {
+		  font-family: 'AncientMedium';
+		  src: url('/fonts/AncientMedium.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+		.old_english{
+			font-family: "AncientMedium";
+			line-height:1;
+		}
+
+	/***** Labelmaker *****/
+		@font-face {
+		  font-family: 'ImpactLabel';
+		  src: url('/fonts/ImpactLabelReversed.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+		.labelmaker{
+			font-family: "ImpactLabel";
+			line-height:1;
+			letter-spacing:0.001em;
+			display: inline-block;
+			color: $white;
+			background-color: $black;	
+			
+			/*&:before{
+				content:'\00a0';
+				position: relative;
+				right: -1px;
+			}
+			&:after{
+				content:'\00a0';
+				position: relative;
+				left: -1px;
+			}*/
+		}
+
+	/***** Typewriter *****/
+		@font-face {
+		  font-family: 'MyUnderwood';
+		  src: url('/fonts/MyUnderwood.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+		.typewriter{
+			font-family: "MyUnderwood";
+			line-height:1;
+		}
